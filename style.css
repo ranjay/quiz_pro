@@ -1,0 +1,53 @@
+body {
+  font-size: 20px;
+}
+.react-quiz-container {
+  width: unset !important;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  position: fixed;
+  top: 40%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  transform: -webkit-translate(-50%, -50%);
+  transform: -moz-translate(-50%, -50%);
+  transform: -ms-translate(-50%, -50%);
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #ee9a4d;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+}
+.toolbar {
+  background: #ee9a4d;
+}
+
+.react-quiz-container .answerBtn {
+  white-space: normal;
+  word-wrap: break-word;
+}
+.list {
+  overflow-x: hidden;
+  margin-top: -1px;
+  border-bottom: 1px solid #ccc;
+}
